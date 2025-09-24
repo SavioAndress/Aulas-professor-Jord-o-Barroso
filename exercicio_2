@@ -1,32 +1,19 @@
-const readline = require('readline');
+num1 = 3
+num1 = 2
+num1 = 1
 
-const input = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-
-input.question('Informe a nota: ', (num1) => {
-    num1 = parseInt(num1)
-input.question('Informe a nota: ', (num2) => {
-    num2 = parseInt(num2)
-input.question('Informe a nota: ', (num3) => {
-    num3 = parseInt(num3)
-    if ((num1 > num2) & (num1 > num2)) {
-        console.log('O maior é o Numero 1')
-    }
-    else if ((num2 > num1) & (num2 > num3)) {
-        console.log('O maior é o Numero 2')
-    }
-    else if ((num3 > num1) & (num3 > num2)) {
-        console.log('O maior é o Numero 3')
-    }
-    else if ((num1 === num2) & (num1 === num3)) {
-        console.log('São todos iguais')
-    }
-    else {
-        console.log('Erro.')
-  input.close();
-  input.close();
-  input.close();
-})})});
+if ((num1 > num2) & (num1 > num2)) {
+  console.log('O maior é o Numero 1')
+}
+else if ((num2 > num1) & (num2 > num3)) {
+  console.log('O maior é o Numero 2')
+}
+else if ((num3 > num1) & (num3 > num2)) {
+  console.log('O maior é o Numero 3')
+}
+else if ((num1 === num2) & (num1 === num3)) {
+  console.log('São todos iguais')
+}
+else {
+  console.log('Erro.')
+}
