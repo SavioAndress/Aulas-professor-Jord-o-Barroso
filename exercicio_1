@@ -1,0 +1,17 @@
+const readline = require('readline');
+
+const input = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+input.question('Informe a nota: ', (num) => {
+    num = parseInt(num)
+if (num % 2 === 0) {
+    console.log('Par')
+}
+else {
+    console.log ('Impar')
+}
+  input.close();
+});
