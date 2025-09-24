@@ -1,0 +1,9 @@
+choice = 10
+var random = (num) => Math.floor(Math.random() * num);
+var r1 =(random(11))
+if (choice === r1){
+  console.log(`Acertou miseravi, o numero é ${r1}`)
+}
+else{
+  console.log(`Errou, o numero correto é ${r1}`)
+}
