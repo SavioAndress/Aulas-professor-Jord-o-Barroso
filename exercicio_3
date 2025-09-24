@@ -1,0 +1,21 @@
+const readline = require('readline');
+
+const input = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+input.question('Informe a nota: ', (nota) => {
+    nota = parseFloat(nota)
+  
+  if ((nota) >= 6) {
+      console.log('Aprovado');
+  }
+  else if ((nota) >=4){
+      console.log('Recuperção');
+  }
+  else {
+      console.log('Reprovado');
+  }
+  input.close();
+});
